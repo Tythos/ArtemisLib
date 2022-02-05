@@ -9,7 +9,7 @@
 
 #include "aTypewriter.h"
 #include <math.h>
-#include "SDL_opengl.h"
+#include <SDL_opengl.h>
 
 aTypewriter::aTypewriter() {
 	if (TTF_Init() == -1) {

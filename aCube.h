@@ -11,7 +11,7 @@
 #define ARTEMIS_CUBE_H
 
 #include "aObject.h"
-#include "SDL_opengl.h"
+#include <SDL_opengl.h>
 
 class aCube : public aObject {
 private:

@@ -13,7 +13,7 @@
 
 #include <stdio.h>
 #include "SDL.h"
-#include "SDL_opengl.h"
+#include <SDL_opengl.h>
 #include "kQuat.h"
 #include "kTrans.h"
 

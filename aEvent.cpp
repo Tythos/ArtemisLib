@@ -123,17 +123,17 @@ void eventList::checkEvents() {
 
 void eventList::map() {
 	eventList * currentNode = this;
-	char * te = "";
-	char * nn = "";
+	char * te = (char*)"";
+	char * nn = (char*)"";
 	for (int i = 0; i < 10; i++) {
 		if (currentNode->thisEvent == NULL)
-			te = "NULL";
+			te = (char*)"NULL";
 		else
-			te = "EVENT";
+			te = (char*)"EVENT";
 		if (currentNode->nextNode == NULL)
-			nn = "NULL";
+			nn = (char*)"NULL";
 		else
-			nn = "NODE";
+			nn = (char*)"NODE";
 		printf("NODE %i: thisEvent, %s; nextNode, %s\n", i, te, nn);
 		if (currentNode->thisEvent == NULL && currentNode->nextNode == NULL)
 			break;

@@ -15,7 +15,7 @@
 #include <ofstream>
 #include <ctime>
 #include "SDL.h"
-#include "SDL_opengl.h"
+#include <SDL_opengl.h>
 #include "SDL_image.h"
 
 // Utility

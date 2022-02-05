@@ -1,6 +1,6 @@
 #include "aColor.h"
 
-#include "SDL_opengl.h"
+#include <SDL_opengl.h>
 
 aColor::aColor() { 
 	r = 1.0f; g = 1.0f; b = 1.0f; a = 1.0f; 

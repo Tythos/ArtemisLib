@@ -8,7 +8,7 @@
  */
 
 #include "aLight.h"
-#include "SDL_opengl.h"
+#include <SDL_opengl.h>
 #include <stdio.h>
 
 aLight::aLight() {

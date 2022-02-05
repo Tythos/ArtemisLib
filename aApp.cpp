@@ -8,7 +8,7 @@
  */
 
 #include "aApp.h"
-#include "SDL_opengl.h"
+#include <SDL_opengl.h>
 
 // Initializes application components, including graphics context and empty object & panel lists
 aApp::aApp() {

@@ -13,7 +13,7 @@
 
 #include "aMesh.h"
 #include <stdio.h>
-#include "SDL_opengl.h"
+#include <SDL_opengl.h>
 
 // --- aVertex --- //
 

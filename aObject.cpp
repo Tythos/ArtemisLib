@@ -8,7 +8,7 @@
  */
 
 #include "aObject.h"
-#include "SDL_opengl.h"
+#include <SDL_opengl.h>
 
 aObject::aObject(aObject * p) {
 	frame = new kTrans();

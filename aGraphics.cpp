@@ -7,9 +7,11 @@
  *
  */
 
-#include "aGraphics.h"
-#include "SDL_opengl.h"
+#include <SDL.h>
+#include <SDL_opengl.h>
 #include <gl/GLU.h>
+
+#include "aGraphics.h"
 #include "kQuat.h"
 
 aGraphics::aGraphics() {

@@ -7,11 +7,12 @@
  *
  */
 
+#include <SDL.h>
+#include <SDL_opengl.h>
+#include <SDL_image.h>
+
 #include "aCube.h"
-#include "SDL.h"
-#include "SDL_opengl.h"
 #include "aObject.h"
-#include "SDL_image.h"
 #include "numericMath.h"
 
 aCube::aCube()
