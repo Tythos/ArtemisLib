@@ -1,0 +1,39 @@
+﻿  aApp.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aButton.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aCamera.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aConsole.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aCube.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aCursor.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aGraph.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aGraphics.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aKeyboard.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\aKeyboard.cpp(202,28): error C2065: 'SDLK_RMETA': undeclared identifier
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\aKeyboard.cpp(202,58): error C2065: 'SDLK_LMETA': undeclared identifier
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\aKeyboard.cpp(204,28): error C2065: 'SDLK_LSUPER': undeclared identifier
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\aKeyboard.cpp(204,59): error C2065: 'SDLK_RSUPER': undeclared identifier
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\aKeyboard.cpp(212,28): error C2065: 'SDLK_NUMLOCK': undeclared identifier
+  aLight.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aMouse.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aObject.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aPanel.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aPlanet.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aSkybox.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aTexture.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  aTypewriter.cpp
+C:\Users\Brian Kirkpatrick\Projects\Artemis\ArtemisLib\begin_code.h(11,10): fatal error C1083: Cannot open include file: 'C:\Users\Brian\Projects\SDL2-2.0.4\include\begin_code.h': No such file or directory
+  Generating Code...

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{06CF6363-399D-4997-8E76-CCEA37677293}</ProjectGuid>
+    <RootNamespace>ArtemisLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.24730.2</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\Users\Brian Kirkpatrick\Projects\SDL\SDL2_ttf-2.0.15;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL2_image-2.0.5;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL2-2.0.12\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalIncludeDirectories>C:\Users\Brian Kirkpatrick\Projects\SDL\SDL2-2.0.12\include;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL2_image-2.0.5;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL2_ttf-2.0.15</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aApp.cpp" />
+    <ClCompile Include="aButton.cpp" />
+    <ClCompile Include="aCamera.cpp" />
+    <ClCompile Include="aColor.cpp" />
+    <ClCompile Include="aConsole.cpp" />
+    <ClCompile Include="aCube.cpp" />
+    <ClCompile Include="aCursor.cpp" />
+    <ClCompile Include="aEvent.cpp" />
+    <ClCompile Include="aGraph.cpp" />
+    <ClCompile Include="aGraphics.cpp" />
+    <ClCompile Include="aKeyboard.cpp" />
+    <ClCompile Include="aLight.cpp" />
+    <ClCompile Include="aMesh.cpp" />
+    <ClCompile Include="aModel.cpp" />
+    <ClCompile Include="aMouse.cpp" />
+    <ClCompile Include="aObject.cpp" />
+    <ClCompile Include="aPanel.cpp" />
+    <ClCompile Include="aPlanet.cpp" />
+    <ClCompile Include="aSkybox.cpp" />
+    <ClCompile Include="aSoundboard.cpp" />
+    <ClCompile Include="aStopwatch.cpp" />
+    <ClCompile Include="aTexture.cpp" />
+    <ClCompile Include="aTypewriter.cpp" />
+    <ClCompile Include="Conversion.cpp" />
+    <ClCompile Include="kMat.cpp" />
+    <ClCompile Include="kQuat.cpp" />
+    <ClCompile Include="kString.cpp" />
+    <ClCompile Include="kTrans.cpp" />
+    <ClCompile Include="kVec.cpp" />
+    <ClCompile Include="numericMath.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aApp.h" />
+    <ClInclude Include="aButton.h" />
+    <ClInclude Include="aCamera.h" />
+    <ClInclude Include="aColor.h" />
+    <ClInclude Include="aConsole.h" />
+    <ClInclude Include="aCube.h" />
+    <ClInclude Include="aCursor.h" />
+    <ClInclude Include="aEvent.h" />
+    <ClInclude Include="aGraph.h" />
+    <ClInclude Include="aGraphics.h" />
+    <ClInclude Include="aKeyboard.h" />
+    <ClInclude Include="aLight.h" />
+    <ClInclude Include="aMesh.h" />
+    <ClInclude Include="aModel.h" />
+    <ClInclude Include="aMouse.h" />
+    <ClInclude Include="aObject.h" />
+    <ClInclude Include="aPanel.h" />
+    <ClInclude Include="aPlanet.h" />
+    <ClInclude Include="aSkybox.h" />
+    <ClInclude Include="aSoundboard.h" />
+    <ClInclude Include="aStopwatch.h" />
+    <ClInclude Include="aTexture.h" />
+    <ClInclude Include="aTypewriter.h" />
+    <ClInclude Include="Conversion.h" />
+    <ClInclude Include="DataStructures.h" />
+    <ClInclude Include="kMat.h" />
+    <ClInclude Include="kQuat.h" />
+    <ClInclude Include="kString.h" />
+    <ClInclude Include="kTrans.h" />
+    <ClInclude Include="kVec.h" />
+    <ClInclude Include="libArtemis.h" />
+    <ClInclude Include="measure.h" />
+    <ClInclude Include="numericMath.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
