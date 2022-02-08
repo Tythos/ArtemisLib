@@ -1,3 +1,8 @@
+/**
+*
+*/
+
+#include <SDL.h>
 #include <stdio.h>
 #include <iostream>
 #include "libArtemis.h"
@@ -122,11 +127,11 @@ int main(int argc, char * argv[]) {
 	// Set up app
 	hApp = new aApp();
 	hApp->hGraphics->setScreen(600, 900, 32);
-	hApp->debugging = true;
+//	hApp->debugging = true;
 	hApp->externalRender = testDraw;
+	hApp->hGraphics->hTypewriter->setFont("arial.ttf");
 
-	// Set up camera
-	hApp->camera->setPosition(1.0f, 1.0f, 5.0f);
+	// Set up cameraa
 	hApp->camera->setRight(5.0f, 0.0f, -1.0f);
 	hApp->camera->setNearClip(0.1f);
 	hApp->camera->setFarClip(20.0f);

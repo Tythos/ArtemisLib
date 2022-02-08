@@ -10,8 +10,11 @@
 #ifndef ARTEMIS_GRAPHICS_H
 #define ARTEMIS_GRAPHICS_H
 
-#include "SDL.h"
-#include "SDL_thread.h"
+#include <SDL.h>
+#include <gl/glew.h>
+#include <SDL_opengl.h>
+#include <gl/glu.h>
+#include <SDL_thread.h>
 #include "measure.h"
 #include "aCamera.h"
 #include "aTypewriter.h"
@@ -23,7 +26,9 @@ private:
 	int bpp;
 	bool windowOk;
 	bool isWindowed;
-	SDL_Surface * screen;
+	SDL_Window* window;
+	SDL_GLContext context;
+	//SDL_Surface * screen;
 	SDL_Color bgColor;
 	//SDL_sem * screenLock;
 protected:

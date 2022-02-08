@@ -52,6 +52,47 @@
     <ClCompile Include="..\..\numericMath.cpp" />
     <ClCompile Include="..\..\smartList.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\aApp.h" />
+    <ClInclude Include="..\..\aButton.h" />
+    <ClInclude Include="..\..\aCamera.h" />
+    <ClInclude Include="..\..\aColor.h" />
+    <ClInclude Include="..\..\aConsole.h" />
+    <ClInclude Include="..\..\aCube.h" />
+    <ClInclude Include="..\..\aCursor.h" />
+    <ClInclude Include="..\..\aEvent.h" />
+    <ClInclude Include="..\..\aGraph.h" />
+    <ClInclude Include="..\..\aGraphics.h" />
+    <ClInclude Include="..\..\aKeyboard.h" />
+    <ClInclude Include="..\..\aLight.h" />
+    <ClInclude Include="..\..\aMesh.h" />
+    <ClInclude Include="..\..\aModel.h" />
+    <ClInclude Include="..\..\aMouse.h" />
+    <ClInclude Include="..\..\aObject.h" />
+    <ClInclude Include="..\..\aPanel.h" />
+    <ClInclude Include="..\..\aPlanet.h" />
+    <ClInclude Include="..\..\aSkybox.h" />
+    <ClInclude Include="..\..\aSoundboard.h" />
+    <ClInclude Include="..\..\aStopwatch.h" />
+    <ClInclude Include="..\..\aTexture.h" />
+    <ClInclude Include="..\..\aTypewriter.h" />
+    <ClInclude Include="..\..\begin_code.h" />
+    <ClInclude Include="..\..\close_code.h" />
+    <ClInclude Include="..\..\Conversion.h" />
+    <ClInclude Include="..\..\DataStructures.h" />
+    <ClInclude Include="..\..\kMat.h" />
+    <ClInclude Include="..\..\kQuat.h" />
+    <ClInclude Include="..\..\kString.h" />
+    <ClInclude Include="..\..\kTrans.h" />
+    <ClInclude Include="..\..\kVec.h" />
+    <ClInclude Include="..\..\libArtemis.h" />
+    <ClInclude Include="..\..\measure.h" />
+    <ClInclude Include="..\..\nTree.h" />
+    <ClInclude Include="..\..\numericMath.h" />
+    <ClInclude Include="..\..\SDLMain.h" />
+    <ClInclude Include="..\..\smartList.h" />
+    <ClInclude Include="..\..\Utility.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -106,19 +147,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_mixer\include;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_ttf;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_image;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Brian Kirkpatrick\Projects\SDL\glew\include;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_mixer\include;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_ttf;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_image;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_mixer\include;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_ttf;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_image;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Brian Kirkpatrick\Projects\SDL\glew\include;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_mixer\include;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_ttf;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_image;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_mixer\include;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_ttf;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_image;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Brian Kirkpatrick\Projects\SDL\glew\include;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_mixer\include;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_ttf;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_image;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_mixer\include;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_ttf;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_image;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Brian Kirkpatrick\Projects\SDL\glew\include;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_mixer\include;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_ttf;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL_image;C:\Users\Brian Kirkpatrick\Projects\SDL\SDL\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

@@ -7,30 +7,29 @@
  *
  */
 
-#include <SDL.h>
-#include <SDL_opengl.h>
-#include <gl/GLU.h>
-
 #include "aGraphics.h"
 #include "kQuat.h"
 
 aGraphics::aGraphics() {
 	// Set up initial graphics dimensions
 	windowOk = false;
-	screen = NULL;
+	window = NULL;
 	hTypewriter = new aTypewriter();
 }
 
 aGraphics::~aGraphics() {
-	if (screen != NULL) {
-		bool t = false;
+	if (window != NULL) {
+		/*bool t = false;
 		SDL_FreeSurface(screen);
 		screen = NULL;
-		t = false;
+		t = false;*/
 	}
 }
 
 bool aGraphics::setScreen(int newHeight, int newWidth, int newBpp) {
+	// start with window NOT okay; will only be true if we succeed
+	windowOk = false;
+
 	// Assign new screen attributes if valid
 	width = newWidth;
 	height = newHeight;
@@ -43,25 +42,35 @@ bool aGraphics::setScreen(int newHeight, int newWidth, int newBpp) {
 	SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, bpp - 3 * colorBits);
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 
-	// Initialize screen context
-	if (screen != NULL) {
-		SDL_FreeSurface(screen);
-		screen = NULL;
+	// create and verify window handle
+	window = SDL_CreateWindow("SDL Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, newHeight, newWidth, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN);
+	if (window == NULL) {
+		return false;
 	}
-	screen = SDL_SetVideoMode(width, height, bpp, SDL_OPENGL | SDL_SWSURFACE | SDL_RESIZABLE);
-	if (screen == NULL) {
-		windowOk = false;
-		return windowOk;
-	} else {
-		windowOk = true;
+
+	// create and verify context
+	context = SDL_GL_CreateContext(window);
+	if (context == NULL) {
+		return false;
 	}
-	SDL_WM_SetCaption("Sdl Window", NULL);
-	isWindowed = false;
-	bgColor.r = 255; bgColor.g = 255; bgColor.b = 255;
-	//screenLock = SDL_CreateSemaphore(1);
+
+	// initialize glew
+	GLenum glewError = glewInit();
+	if (glewError != GLEW_OK) {
+		return false;
+	}
+
+	// assert vsync
+	if (SDL_GL_SetSwapInterval(1) < 0) {
+		return false;
+	}
+
+	// initialize OpenGL settings
 	if (!declareSettings()) {
-		windowOk = false;
+		return false;
 	}
+
+	windowOk = true;
 	return windowOk;
 }
 
@@ -79,21 +88,31 @@ bool aGraphics::declareSettings() {
 }
 
 void aGraphics::printAttributes() {
-    // Print out attributes of the context we created
-    int nAttr;
-    int i;    
-    int attr[] = { SDL_GL_RED_SIZE, SDL_GL_BLUE_SIZE, SDL_GL_GREEN_SIZE,
-	SDL_GL_ALPHA_SIZE, SDL_GL_BUFFER_SIZE, SDL_GL_DEPTH_SIZE };
-	
-    char *desc[] = { "Red size: %d bits\n", "Blue size: %d bits\n", "Green size: %d bits\n", "Alpha size: %d bits\n", "Color buffer size: %d bits\n", "Depth bufer size: %d bits\n" };
-    nAttr = sizeof(attr) / sizeof(int);
-    
-    for (i = 0; i < nAttr; i++) {
-        int value;
-		SDL_GLattr myAttr = SDL_GLattr(attr[i]);
-        SDL_GL_GetAttribute (myAttr, &value);
-        printf (desc[i], value);
-    }
+	int value;
+
+	// print red size
+	SDL_GL_GetAttribute(SDL_GL_RED_SIZE, &value);
+	printf("Red size: %d bits\n", value);
+
+	// print blue size
+	SDL_GL_GetAttribute(SDL_GL_BLUE_SIZE, &value);
+	printf("Blue size: %d bits\n", value);
+
+	// print green size
+	SDL_GL_GetAttribute(SDL_GL_GREEN_SIZE, &value);
+	printf("Green size: %d bits\n", value);
+
+	// print alpha size
+	SDL_GL_GetAttribute(SDL_GL_ALPHA_SIZE, &value);
+	printf("Alphasize: %d bits\n", value);
+
+	// print color buffer size
+	SDL_GL_GetAttribute(SDL_GL_BUFFER_SIZE, &value);
+	printf("Color buffer size: %d bits\n", value);
+
+	// print depth buffer size
+	SDL_GL_GetAttribute(SDL_GL_DEPTH_SIZE, &value);
+	printf("Depth buffer size: %d bits\n", value);
 }
 
 void aGraphics::resize(int w, int h) {
@@ -164,7 +183,7 @@ void aGraphics::go3d(aCamera * cam) {
 
 void aGraphics::swapBuffers() {
 	// Show current buffer on screen
-	SDL_GL_SwapBuffers();
+	SDL_GL_SwapWindow(window);
 }
 
 void aGraphics::clearScreen() {

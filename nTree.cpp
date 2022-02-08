@@ -228,5 +228,5 @@ template <class T> void nTree<T>::printTree() {
 
 template <class T> void nTree<T>::reset() {
 	// Clears all contents of tree and resets ids, counters, pointers, etc
-	remove(nodeId);
+	removeNode(nodeId);
 }
