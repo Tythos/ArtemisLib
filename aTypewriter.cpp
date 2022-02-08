@@ -559,7 +559,7 @@ bool aTypewriter::type(kString text, int contextWidth, int contextHeight) {
 	// given location. Note that the coordinates will render according to the
 	// current GL view matrix, so they may or may not be aligned with the world.
 	if (currFont == NULL) {
-		printf("aTypewriter::type - Cannot type string '%s' without a loaded font\n", text);
+		//printf("aTypewriter::type - Cannot type string '%s' without a loaded font\n", text);
 		return false;
 	}
 	
@@ -588,7 +588,7 @@ bool aTypewriter::type(kString text, int contextWidth, int contextHeight) {
 	glBindTexture(GL_TEXTURE_2D, texture);
 	glTexImage2D(GL_TEXTURE_2D, 0, 4, (int)(w.value), (int)(h.value), 0, GL_BGRA, GL_UNSIGNED_BYTE, intermediary->pixels);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR); 
 	
 	// Stand by to render!
 	glBindTexture(GL_TEXTURE_2D, texture);
