@@ -1,0 +1,6 @@
+x64/
+Debug/
+Release/
+*.filters
+*.user
+*.dll

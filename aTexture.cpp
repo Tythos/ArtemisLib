@@ -13,7 +13,7 @@ aTexture::~aTexture() {
 
 bool aTexture::loadFromFile(kString filename) {
 	// Loads texture image from file
-	SDL_Surface * surface = IMG_Load(filename.raw());
+	SDL_Surface* surface = IMG_Load(filename.raw());
 	if (surface == NULL) {
 		_isLoaded = false;
 		return false;

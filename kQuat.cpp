@@ -33,10 +33,10 @@ kQuat::kQuat(float x, float y, float z) {
 }
 
 kQuat::kQuat(float s, float i, float j, float k) {
-	scl = s;
+	/*scl = s;
 	vec[0] = i;
 	vec[1] = j;
-	vec[2] = k;
+	vec[2] = k;*/
 }
 
 kQuat::~kQuat() {
