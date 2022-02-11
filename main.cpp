@@ -131,6 +131,14 @@ int main(int argc, char * argv[]) {
 	hApp->externalRender = testDraw;
 	hApp->hGraphics->hTypewriter->setFont("arial.ttf");
 
+	// before textures are loaded, for newer sdl2_image implementations, we need to img_init with png
+	int imgFlags = IMG_INIT_PNG;
+	if (!(IMG_Init(imgFlags) & imgFlags))
+	{
+		printf("SDL_image could not initialize! SDL_image Error: %s\n", IMG_GetError());
+		return 1;
+	}
+
 	// Set up cameraa
 	hApp->camera->setRight(5.0f, 0.0f, -1.0f);
 	hApp->camera->setNearClip(0.1f);
