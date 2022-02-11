@@ -127,7 +127,7 @@ int main(int argc, char * argv[]) {
 	// Set up app
 	hApp = new aApp();
 	hApp->hGraphics->setScreen(600, 900, 32);
-//	hApp->debugging = true;
+	//hApp->debugging = true;
 	hApp->externalRender = testDraw;
 	hApp->hGraphics->hTypewriter->setFont("arial.ttf");
 
@@ -178,13 +178,13 @@ int main(int argc, char * argv[]) {
 	hApp->debug("Earth initialized");
 
 	// Load skybox
-	/*skyboxTex = new aTexture();
+	skyboxTex = new aTexture();
 	skyboxTex->loadFromFile("background.png");
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
 	skyboxMesh = new aMesh();
 	skyboxMesh->loadSphere(1.5f, 32);
-	skyboxMesh->setColor(0.1f, 0.2f, 0.4f, 1.0f);*/
+	//skyboxMesh->setColor(0.1f, 0.2f, 0.4f, 1.0f);
 
 	// Run base
 	hApp->debug("The app is being executed...");
